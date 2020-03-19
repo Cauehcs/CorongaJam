@@ -14,9 +14,11 @@ public class barsBerraviour : MonoBehaviour
         valorTedio = Mathf.Clamp(valorTedio, 0, 1);
         valorMedo = Mathf.Clamp(valorMedo, 0, 1);
 
-        print("tedio " + valorTedio);
-        print("saude " + valorSaude);
-        print("medo " + valorMedo);
+        for (int i = 0; i < bars.Length; i++) {
+            if (bars[i].fillAmount < 0.2) bars[i].color = Color.red;
+            else if (bars[i].fillAmount < 0.5) bars[i].color = Color.yellow;
+            else if (bars[i].fillAmount <= 1) bars[i].color = Color.green;
+        }
 
         bars[0].fillAmount = valorTedio;
         bars[1].fillAmount = valorSaude;
