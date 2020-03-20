@@ -5,51 +5,50 @@ using UnityEngine.UI;
 
 public class barsBerraviour : MonoBehaviour
 {
-    [SerializeField] Image[] bars;
-    static float valorTedio, valorSaude, valorMedo;
+    [SerializeField] Sprite[] numbers, icons;
+    [SerializeField] Image[] numbersPosition, iconPosition;
+
+    static float valorTedio, valorSaude;
+    string valorTedioText, valorSaudeText;
 
     private void Update() {
-        
-        valorSaude = Mathf.Clamp(valorSaude, 0, 1);
-        valorTedio = Mathf.Clamp(valorTedio, 0, 1);
-        valorMedo = Mathf.Clamp(valorMedo, 0, 1);
+        //1 - Saúde 2 - Tédio
 
-        for (int i = 0; i < bars.Length; i++) {
-            if (bars[i].fillAmount < 0.2) bars[i].color = Color.red;
-            else if (bars[i].fillAmount < 0.5) bars[i].color = Color.yellow;
-            else if (bars[i].fillAmount <= 1) bars[i].color = Color.green;
+        valorTedioText = valorTedio.ToString();
+        valorSaudeText = valorSaude.ToString();
+
+        if (valorTedio < 20) {
+            iconPosition[0].sprite = icons[2]; 
+            numbersPosition[0].color = Color.red; numbersPosition[1].color = Color.red; numbersPosition[2].color = Color.red;
+        } else if (valorTedio < 50) {
+            iconPosition[0].sprite = icons[1];
+            numbersPosition[0].color = Color.yellow; numbersPosition[1].color = Color.yellow; numbersPosition[2].color = Color.yellow;
+        } else if (valorTedio <= 100) {
+            iconPosition[0].sprite = icons[0];
+            numbersPosition[0].color = Color.green; numbersPosition[1].color = Color.green; numbersPosition[2].color = Color.green;
         }
 
-        bars[0].fillAmount = valorTedio;
-        bars[1].fillAmount = valorSaude;
-        bars[2].fillAmount = valorMedo;
+        if (valorSaude < 20) {
+            iconPosition[1].sprite = icons[5];
+            numbersPosition[3].color = Color.red; numbersPosition[4].color = Color.red; numbersPosition[5].color = Color.red;
+        }
+        else if (valorSaude < 50) {
+            iconPosition[1].sprite = icons[4];
+            numbersPosition[3].color = Color.yellow; numbersPosition[4].color = Color.yellow; numbersPosition[5].color = Color.yellow;
+        }
+        else if (valorSaude <= 100) {
+            iconPosition[1].sprite = icons[3];
+            numbersPosition[3].color = Color.green; numbersPosition[4].color = Color.green; numbersPosition[5].color = Color.green;
+        }
+
     }
 
-    public static void ResetBars(float barra) {
-        switch (barra) {
-            case 0:
-                valorTedio = 1;
-                break;
-            case 1:
-                valorSaude = 1;
-                break;
-            case 2:
-                valorMedo = 1;
-                break;
-            case 3:
-                valorMedo = 1; valorSaude = 1; valorTedio = 1;
-                break;
-        }
-    }
 
     public static void PerderBarra(float barra, float valor) {
-        //0.0001
         switch (barra) {
             case 0: valorTedio -= valor;
                 break;
             case 1: valorSaude -= valor;
-                break;
-            case 2: valorMedo -= valor;
                 break;
         }
     }
@@ -61,9 +60,6 @@ public class barsBerraviour : MonoBehaviour
                 break;
             case 1:
                 valorSaude += valor;
-                break;
-            case 2:
-                valorMedo += valor;
                 break;
         }
     }
