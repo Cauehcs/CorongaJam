@@ -13,17 +13,8 @@ public class playerBehaviour : MonoBehaviour
     }
 
     private void FixedUpdate() {
-    
         Movimentacao(speed);
         Animation();
-       
-        barsBerraviour.PerderBarra(0, 0.0001f * 4f);
-
-        //0.0001f / 1.5f - ~5.0min 
-        //0.0001f * 1.0f - ~3.15min
-        //0.0001f * 2.0f - ~1.45min
-        //0.0001f * 2.5f - ~1.15min
-
     }
 
     public static bool cima, baixo, esquerda, direita;
