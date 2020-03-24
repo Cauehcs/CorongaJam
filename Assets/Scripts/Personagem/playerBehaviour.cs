@@ -26,7 +26,7 @@ public class playerBehaviour : MonoBehaviour
 
     }
 
-    bool cima, baixo, esquerda, direita;
+    public static bool cima, baixo, esquerda, direita;
     void Animation() {
         if (Input.GetAxisRaw("Vertical") == 1) estadoMovimento = "Cima";
         else if (Input.GetAxisRaw("Vertical") == -1) estadoMovimento = "Baixo";

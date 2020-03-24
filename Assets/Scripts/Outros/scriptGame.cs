@@ -25,7 +25,7 @@ public class scriptGame : MonoBehaviour
     }
 
     IEnumerator Cronometro() {
-        segundos++;
+        if (!barsBerraviour.transicaoBool)segundos++;
         yield return new WaitForSeconds(1);
         StartCoroutine(Cronometro());
     }

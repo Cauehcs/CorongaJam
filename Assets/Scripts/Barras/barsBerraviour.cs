@@ -8,6 +8,8 @@ public class barsBerraviour : MonoBehaviour
     [SerializeField] Sprite[] numbers, icons;
     [SerializeField] Image[] numbersPosition, iconPosition;
 
+    public static bool transicaoBool;
+
     static float valorTedio, valorSaude;
     string valorTedioText, valorSaudeText;
 
