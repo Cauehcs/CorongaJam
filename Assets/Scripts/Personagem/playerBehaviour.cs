@@ -57,4 +57,11 @@ public class playerBehaviour : MonoBehaviour
 
         my_Rb.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        if(Input.GetKeyDown(KeyCode.X) && collision.tag == "quicktimeCozinha") {
+            collision.GetComponent<QuickTimeGeneratorCozinha>().enabled = true;
+            QuickTimeGeneratorCozinha.StartGame();
+        }
+    }
 }
