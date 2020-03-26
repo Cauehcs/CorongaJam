@@ -65,6 +65,12 @@ public class playerBehaviour : MonoBehaviour
             QuickTimeGeneratorCozinha.StartGame();
         }
 
+        if (Input.GetKeyDown(KeyCode.X) && collision.tag == "quicktimeBanheiro") {
+            collision.GetComponent<QuickTimeGeneratorBanheiro>().enabled = true;
+            this.GetComponent<Animator>().enabled = false;
+            QuickTimeGeneratorBanheiro.StartGame();
+        }
+        
         if (Input.GetKeyDown(KeyCode.X) && collision.tag == "secundarios") {
             collision.GetComponent<MiniGameSecundario>().interagiu = true;
         }

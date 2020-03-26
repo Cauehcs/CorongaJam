@@ -38,15 +38,19 @@ public class scriptGame : MonoBehaviour {
     void AtividadesDia() {
         if(diaAtual == 1) {
             principais[0].SetActive(true);
+            principais[1].SetActive(false);
         }
         else if(diaAtual == 2) {
+            principais[1].SetActive(true);
             principais[0].SetActive(false);
         }
         else if(diaAtual == 3) {
             principais[0].SetActive(false);
-            
-            if(aux < quantidadeSujeira) {
-                int sort = Random.Range(0, 8);
+            principais[1].SetActive(false);
+
+            if (aux < quantidadeSujeira) {
+                int sort = Random.Range(0, 7);
+                sort = Mathf.Clamp(sort, 0, 6);
                 if (!sujeiras[sort].activeSelf) {
                     aux++;
                     sujeiras[sort].SetActive(true);

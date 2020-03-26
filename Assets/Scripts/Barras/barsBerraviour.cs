@@ -46,17 +46,17 @@ public class barsBerraviour : MonoBehaviour {
             numbersPosition[0].color = Color.green; numbersPosition[1].color = Color.green; numbersPosition[2].color = Color.green;
         }
 
-        if (valorTedio >= 0 && valorTedio < 20) {
+        if (valorTedio >= 0 && valorTedio < 50) {
             iconPosition[1].sprite = icons[5];
             numbersPosition[7].color = Color.red;
             numbersPosition[3].color = Color.red; numbersPosition[4].color = Color.red; numbersPosition[5].color = Color.red;
         }
-        else if (valorTedio >= 20 && valorTedio <= 50) {
+        else if (valorTedio >= 50 && valorTedio <= 80) {
             iconPosition[1].sprite = icons[4];
             numbersPosition[7].color = Color.yellow;
             numbersPosition[3].color = Color.yellow; numbersPosition[4].color = Color.yellow; numbersPosition[5].color = Color.yellow;
         }
-        else if (valorTedio >= 51 && valorTedio <= 100) {
+        else if (valorTedio >= 81 && valorTedio <= 100) {
             iconPosition[1].sprite = icons[3];
             numbersPosition[7].color = Color.green;
             numbersPosition[3].color = Color.green; numbersPosition[4].color = Color.green; numbersPosition[5].color = Color.green;

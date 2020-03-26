@@ -32,7 +32,6 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         erros = -1; ultimaTecla = null;
         GameObject.Find("player").GetComponent<Animator>().enabled = true;
         btnCanva.SetActive(false);
-        this.gameObject.SetActive(false);
         GetComponent<QuickTimeGeneratorChao>().enabled = false;
     }
 
@@ -43,12 +42,15 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         btns[4].color = new Vector4(btns[4].color.r, btns[4].color.g, btns[4].color.b, 0.35f);
         btns[5].color = new Vector4(btns[5].color.r, btns[5].color.g, btns[5].color.b, 0.35f);
         btns[0].color = new Vector4(btns[0].color.r, btns[0].color.g, btns[0].color.b, 0.35f);
-        StartCoroutine(tempoPausa());
+        GameObject.Find("player").GetComponent<playerBehaviour>().enabled = true;
+        GameObject.Find("player").GetComponent<Animator>().enabled = true;
+        btnCanva.SetActive(false);
         if (aux == 0) {
-            barsBerraviour.PerderBarra(1, 40);
+            barsBerraviour.PerderBarra(1, 50);
             barsBerraviour.GanharBarra(0, 15);
             aux++;
         }
+        this.gameObject.SetActive(false);
     }
 
     IEnumerator tempoPausa() {
@@ -66,15 +68,11 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         StartCoroutine(tempoPausa());
         if (aux == 0) {
             barsBerraviour.PerderBarra(1, 25);
-            barsBerraviour.PerderBarra(0, 15);
+            barsBerraviour.GanharBarra(0, 15);
             aux++;
         }
     }
 
-
-    private void Awake() {
-       
-    }
 
     private void Update() {
         btnCanva.SetActive(true);
@@ -262,7 +260,7 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         if (teclaSelecionada == "baixo") {
             btns[1].color = new Vector4(btns[1].color.r, btns[1].color.g, btns[1].color.b, 0.35f);
             btns[2].color = new Vector4(btns[2].color.r, btns[2].color.g, btns[2].color.b, 0.35f);
-            btns[3].color = new Vector4(btns[3].color.r, btns[3].color.g, btns[3].color.b, 0.35f);
+            btns[3].color = new Vector4(btns[3].color.r, btns[3].color.g, btns[3].color.b, 0.35f);  
             btns[4].color = new Vector4(btns[4].color.r, btns[4].color.g, btns[4].color.b, 1);
             btns[5].color = new Vector4(btns[5].color.r, btns[5].color.g, btns[5].color.b, 0.35f);
             btns[0].color = new Vector4(btns[0].color.r, btns[0].color.g, btns[0].color.b, 0.35f);

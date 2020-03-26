@@ -11,7 +11,7 @@ public class MiniGameSecundario : MonoBehaviour
         if (interagiu) {
             interagiu = false;
             if(aux == 0) {
-                barsBerraviour.PerderBarra(1, 40);
+                barsBerraviour.PerderBarra(1, 50);
                 barsBerraviour.GanharBarra(0, 10);
                 aux++;
             }
