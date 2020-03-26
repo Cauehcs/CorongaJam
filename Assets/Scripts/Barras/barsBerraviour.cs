@@ -15,25 +15,27 @@ public class barsBerraviour : MonoBehaviour {
     [SerializeField] float decrescimoSegundosBarra;
 
     private void Start() {
-        valorSaude = 100; valorTedio = 100;
+        valorSaude = 101; valorTedio = 100;
         StartCoroutine(ContagemBarra(decrescimoSegundosBarra));
     }
 
     private void Update() {
         SetUI();
         SetColorUI();
+        valorSaude = Mathf.Clamp(valorSaude, 0, 100);
+        valorTedio = Mathf.Clamp(valorTedio, 0, 100);
 
-        valorSaudeText = Mathf.Clamp(valorSaude, 0, 100).ToString();
-        valorTedioText = Mathf.Clamp(valorTedio, 0, 100).ToString();
+        valorSaudeText = valorSaude.ToString();
+        valorTedioText = valorTedio.ToString();
     }
 
     void SetColorUI() {
-        if (valorSaude >= 0 && valorSaude <= 20) {
+        if (valorSaude >= 0 && valorSaude < 20) {
             iconPosition[0].sprite = icons[2];
             numbersPosition[6].color = Color.red;
             numbersPosition[0].color = Color.red; numbersPosition[1].color = Color.red; numbersPosition[2].color = Color.red;
         }
-        else if (valorSaude >= 21 && valorSaude <= 50) {
+        else if (valorSaude >= 20 && valorSaude <= 50) {
             iconPosition[0].sprite = icons[1];
             numbersPosition[6].color = Color.yellow;
             numbersPosition[0].color = Color.yellow; numbersPosition[1].color = Color.yellow; numbersPosition[2].color = Color.yellow;
@@ -44,12 +46,12 @@ public class barsBerraviour : MonoBehaviour {
             numbersPosition[0].color = Color.green; numbersPosition[1].color = Color.green; numbersPosition[2].color = Color.green;
         }
 
-        if (valorTedio >= 0 && valorTedio <= 20) {
+        if (valorTedio >= 0 && valorTedio < 20) {
             iconPosition[1].sprite = icons[5];
             numbersPosition[7].color = Color.red;
             numbersPosition[3].color = Color.red; numbersPosition[4].color = Color.red; numbersPosition[5].color = Color.red;
         }
-        else if (valorTedio >= 21 && valorTedio <= 50) {
+        else if (valorTedio >= 20 && valorTedio <= 50) {
             iconPosition[1].sprite = icons[4];
             numbersPosition[7].color = Color.yellow;
             numbersPosition[3].color = Color.yellow; numbersPosition[4].color = Color.yellow; numbersPosition[5].color = Color.yellow;
@@ -114,10 +116,10 @@ public class barsBerraviour : MonoBehaviour {
 
     public static void PerderBarra(float barra, float valor) {
         switch (barra) {
-            case 0:
+            case 1:
                 valorTedio -= valor;
                 break;
-            case 1:
+            case 0:
                 valorSaude -= valor;
                 break;
         }
@@ -125,10 +127,10 @@ public class barsBerraviour : MonoBehaviour {
 
     public static void GanharBarra(float barra, float valor) {
         switch (barra) {
-            case 0:
+            case 1:
                 valorTedio += valor;
                 break;
-            case 1:
+            case 0:
                 valorSaude += valor;
                 break;
         }
@@ -136,7 +138,8 @@ public class barsBerraviour : MonoBehaviour {
 
     IEnumerator ContagemBarra(float tempoDescrescimo) {
         if (!barsBerraviour.transicaoBool) valorSaude--;
-        yield return new WaitForSeconds(tempoDescrescimo);
+        if(valorTedio >= 20 ) yield return new WaitForSeconds(tempoDescrescimo);
+        if (valorTedio < 19) yield return new WaitForSeconds(tempoDescrescimo / 5);
         StartCoroutine(ContagemBarra(decrescimoSegundosBarra));
     }
 

@@ -61,7 +61,19 @@ public class playerBehaviour : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision) {
         if(Input.GetKeyDown(KeyCode.X) && collision.tag == "quicktimeCozinha") {
             collision.GetComponent<QuickTimeGeneratorCozinha>().enabled = true;
+            this.GetComponent<Animator>().enabled = false;
             QuickTimeGeneratorCozinha.StartGame();
         }
+
+        if (Input.GetKeyDown(KeyCode.X) && collision.tag == "secundarios") {
+            collision.GetComponent<MiniGameSecundario>().interagiu = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X) && collision.tag == "quicktimeChao") {
+            collision.GetComponent<QuickTimeGeneratorChao>().enabled = true;
+            this.GetComponent<Animator>().enabled = false;
+            QuickTimeGeneratorChao.StartGame();
+        }
+
     }
 }

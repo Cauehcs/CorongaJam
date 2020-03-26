@@ -7,6 +7,9 @@ public class scriptGame : MonoBehaviour {
     static float diaAtual;
     bool passou, perdeu;
 
+    [SerializeField] float quantidadeSujeira, diaAtualA;
+    
+    public GameObject[] sujeiras, principais;
     float segundos, minutos;
     public string tempoAtual;
     [SerializeField] public float tempoMaximo;
@@ -15,17 +18,41 @@ public class scriptGame : MonoBehaviour {
     public Image[] positions;
 
     private void Awake() {
+        
         passou = false; perdeu = false;
         segundos = 0; minutos = tempoMaximo;
     }
 
     private void Start() {
         StartCoroutine(Cronometro());
+        diaAtual = diaAtualA;
     }
 
     private void FixedUpdate() {
+        AtividadesDia();
         CronometroMethod();
         ContadorUI();
+    }
+
+    float aux = 0;
+    void AtividadesDia() {
+        if(diaAtual == 1) {
+            principais[0].SetActive(true);
+        }
+        else if(diaAtual == 2) {
+            principais[0].SetActive(false);
+        }
+        else if(diaAtual == 3) {
+            principais[0].SetActive(false);
+            
+            if(aux < quantidadeSujeira) {
+                int sort = Random.Range(0, 8);
+                if (!sujeiras[sort].activeSelf) {
+                    aux++;
+                    sujeiras[sort].SetActive(true);
+                }
+            }
+        }
     }
 
     void ContadorUI() {

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - quicktimeCozinha
+  - secundarios
+  - sujeira
+  - quicktimeChao
   layers:
   - Default
   - TransparentFX
