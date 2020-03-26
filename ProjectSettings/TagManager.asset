@@ -9,6 +9,8 @@ TagManager:
   - sujeira
   - quicktimeChao
   - quicktimeBanheiro
+  - apple
+  - pc
   layers:
   - Default
   - TransparentFX

@@ -49,7 +49,7 @@ public class QuickTimeGeneratorBanheiro : MonoBehaviour
             aux++;
         }
         GetComponent<QuickTimeGeneratorBanheiro>().enabled = false;
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Collider2D >().enabled = false;
         this.gameObject.SetActive(false);
     }
 

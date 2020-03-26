@@ -81,5 +81,9 @@ public class playerBehaviour : MonoBehaviour
             QuickTimeGeneratorChao.StartGame();
         }
 
+        if (Input.GetKeyDown(KeyCode.X) && collision.tag == "pc") {
+            GameObject.Find("PC").GetComponent<EscolherGame>().activate = true;
+        }
+
     }
 }
