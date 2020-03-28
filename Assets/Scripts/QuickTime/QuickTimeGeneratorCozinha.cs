@@ -8,6 +8,7 @@ public class QuickTimeGeneratorCozinha : MonoBehaviour
     [SerializeField] string[] teclasQuickTime;
     [SerializeField] string teclaSelecionada, ultimaTecla;
 
+
     [SerializeField] Image[] btns;
 
     public float pontosMaximo;
@@ -90,7 +91,6 @@ public class QuickTimeGeneratorCozinha : MonoBehaviour
     }
 
     private void Update() {
-
         InputKeyboard();
         GameObject.Find("player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GameObject.Find("player").GetComponent<playerBehaviour>().enabled = false;

@@ -24,7 +24,6 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         
     }
 
-
     void resetGame() {
         GameObject.Find("player").GetComponent<playerBehaviour>().enabled = true;
         tempoAtual = 0;
@@ -79,6 +78,7 @@ public class QuickTimeGeneratorChao : MonoBehaviour
         InputKeyboard();
         GameObject.Find("player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GameObject.Find("player").GetComponent<playerBehaviour>().enabled = false;
+
 
         if (ptn >= pontosMaximo) GanhouGame();
         if (erros > 2) PerdeuGame();
