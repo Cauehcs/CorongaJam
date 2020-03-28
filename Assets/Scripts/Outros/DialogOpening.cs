@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class DialogOpening : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
+     public TextMeshProUGUI textDisplay2;
     public string[] sentences;
     private int index;
     public float typingSpeed;
     public GameObject continueButton;
-    
+    public GameObject cameraTransition;
+    public GameObject imageReference;
+    public GameObject txtReference;
+    public GameObject txt2;
+  
+
     void Start(){
         StartCoroutine(Type());
     }
@@ -24,17 +33,33 @@ public class DialogOpening : MonoBehaviour
     {
         foreach(char letter in sentences[index].ToCharArray()){
             textDisplay.text += letter;
+            textDisplay2.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
     }
 
     public void nextSentence(){
         continueButton.SetActive(false);
+        if(index >= 8){
+            cameraTransition.transform.position = new Vector3(50, 0, -10);
+            imageReference.transform.position = new Vector3(50, 0, -5555);
+            txtReference.transform.position = new Vector3(183, 50, 1000000000);
+            txt2.transform.position = new Vector3(183, 50, 0); 
+            continueButton.transform.position = new Vector3(605, 35, 0);
+            }
+            
         if(index< sentences.Length - 1){
             index++;
             textDisplay.text = "";
+            textDisplay2.text = "";
             StartCoroutine(Type());
+            
+        
         }
-        else{textDisplay.text = ""; continueButton.SetActive(false);}
+        
+        else{textDisplay.text = ""; textDisplay2.text = ""; continueButton.SetActive(false);}
+    
+
+        
     }
 }
