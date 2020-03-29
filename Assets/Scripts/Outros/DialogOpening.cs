@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogOpening : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
-    private int index;
+    private int index, controller;
     public float typingSpeed;
     public GameObject continueButton;
     
@@ -36,5 +37,13 @@ public class DialogOpening : MonoBehaviour
             StartCoroutine(Type());
         }
         else{textDisplay.text = ""; continueButton.SetActive(false);}
+    }
+
+    public void toGame(){
+        controller++;
+        if(controller >= 9)
+        {
+            SceneManager.LoadScene("Cauê");
+        }
     }
 }

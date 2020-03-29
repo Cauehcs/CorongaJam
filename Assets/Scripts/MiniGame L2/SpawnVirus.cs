@@ -18,7 +18,9 @@ public class SpawnVirus : MonoBehaviour
 
     void Spawn()
     {
-        Vector3 virusPos = new Vector3(Random.Range(-7, 7), transform.position.y);
+        if(EscolherGame.inInvaders == true){
+        Vector3 virusPos = new Vector3(Random.Range(67.808f, 79.981f), transform.position.y);
         Instantiate(Virus, virusPos, Quaternion.identity);
+        }
     }
 }

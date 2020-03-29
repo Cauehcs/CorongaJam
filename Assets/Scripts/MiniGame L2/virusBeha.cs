@@ -14,17 +14,16 @@ public class virusBeha : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
-        if (transform.position.y <= -5.5f)
+        if (transform.position.y <= -8.59f)
         {
             Destroy(this.gameObject);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "laser")
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "laser")
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
     }

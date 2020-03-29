@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 40ba05533f8bcd4459dc704ff2b35f6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -828417290446649078
+    second: Folha 2_0
+  - first:
+      213: 218342351284156777
+    second: Folha 2_1
+  - first:
+      213: 4185774581278784731
+    second: Folha 2_2
+  - first:
+      213: 9017181255832599046
+    second: Folha 2_3
+  - first:
+      213: -296136405332787997
+    second: Folha 2_4
+  - first:
+      213: -4223291225756374957
+    second: Folha 2_5
+  - first:
+      213: -1990963683789579143
+    second: Folha 2_6
+  - first:
+      213: -5797395600110269987
+    second: Folha 2_7
+  - first:
+      213: -3519927720007773249
+    second: Folha 2_8
+  - first:
+      213: -138238450045441246
+    second: Folha 2_9
+  - first:
+      213: -3956123456459821942
+    second: Folha 2_10
+  - first:
+      213: 6302681660062039614
+    second: Folha 2_11
+  - first:
+      213: -3946761762462027134
+    second: Folha 2_12
+  - first:
+      213: 5867347233420560393
+    second: Folha 2_13
+  - first:
+      213: -4979613014208492987
+    second: Folha 2_14
+  - first:
+      213: -5576398890555279090
+    second: Folha 2_15
+  - first:
+      213: 4290304846103600183
+    second: Folha 2_16
+  - first:
+      213: 7348424760924852403
+    second: Folha 2_17
+  - first:
+      213: -1598169140559080611
+    second: Folha 2_18
+  - first:
+      213: 4719458716152302985
+    second: Folha 2_19
+  - first:
+      213: -66393244636255950
+    second: Folha 2_20
+  - first:
+      213: -4686190150082906230
+    second: Folha 2_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Folha 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4553
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09c22d0dded084f0800000000000000
+      internalID: -828417290446649078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_1
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 4492
+        width: 445
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96937bf2635b70300800000000000000
+      internalID: 218342351284156777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_2
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 4407
+        width: 864
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc3bf2fdcbd61a30800000000000000
+      internalID: 4185774581278784731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_3
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 4468
+        width: 115
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a763db396732d70800000000000000
+      internalID: 9017181255832599046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_4
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 3723
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecf3132289e3ebf0800000000000000
+      internalID: -296136405332787997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_5
+      rect:
+        serializedVersion: 2
+        x: 4072
+        y: 3732
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35864c1910bd365c0800000000000000
+      internalID: -4223291225756374957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_6
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 3587
+        width: 114
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cd403041dae54e0800000000000000
+      internalID: -1990963683789579143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_7
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 3618
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9c309ea638b8fa0800000000000000
+      internalID: -5797395600110269987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2907
+        width: 117
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3d2e55364b62fc0800000000000000
+      internalID: -3519927720007773249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_9
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 2854
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22badb2bcd0e41ef0800000000000000
+      internalID: -138238450045441246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_10
+      rect:
+        serializedVersion: 2
+        x: 2497
+        y: 2828
+        width: 115
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c2f124da60919c0800000000000000
+      internalID: -3956123456459821942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_11
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 2767
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3efd58a39f977750800000000000000
+      internalID: 6302681660062039614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1947
+        width: 117
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2823b5f76194a39c0800000000000000
+      internalID: -3946761762462027134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_13
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1888
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90847e5e8310d6150800000000000000
+      internalID: 5867347233420560393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_14
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 1867
+        width: 115
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ac031c85cd4eab0800000000000000
+      internalID: -4979613014208492987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_15
+      rect:
+        serializedVersion: 2
+        x: 4302
+        y: 1806
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09f19a01c6ac92b0800000000000000
+      internalID: -5576398890555279090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_16
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 988
+        width: 115
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c542ac6893a8b30800000000000000
+      internalID: 4290304846103600183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_17
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 927
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b05c9de269daf560800000000000000
+      internalID: 7348424760924852403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_18
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 906
+        width: 115
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d531cf552a922d9e0800000000000000
+      internalID: -1598169140559080611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_19
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 852
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d016492b2ee7140800000000000000
+      internalID: 4719458716152302985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 27
+        width: 117
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23968fd12bf141ff0800000000000000
+      internalID: -66393244636255950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folha 2_21
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87bf5213ee47feb0800000000000000
+      internalID: -4686190150082906230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

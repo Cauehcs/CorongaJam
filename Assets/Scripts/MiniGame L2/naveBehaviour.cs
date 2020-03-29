@@ -19,37 +19,39 @@ public class naveBehaviour : MonoBehaviour
 
     void Update()
     {
+        if(EscolherGame.inInvaders == true) {
         Movimento();
         Shoot();
+        }
     }
 
 
     void Movimento()
     {
         Transform posi = GetComponent<Transform>();
-        hDirection = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * speed * hDirection);
-        //vDirection = Input.GetAxis("Vertical");
-        //transform.Translate(Vector3.up * speed * vDirection);
+        //hDirection = Input.GetAxis("Horizontal");
+        //transform.Translate(Vector3.right * speed * hDirection);
+        vDirection = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.down * speed * vDirection);
 
-        if (posi.position.x <= -8)
+        if (posi.position.x <= 67.808)
             {
-                posi.position = new Vector3(-8f, posi.position.y, posi.position.z);
+                posi.position = new Vector3(67.808f, posi.position.y, posi.position.z);
             }
-            else if (posi.position.x >= 8)
+            else if (posi.position.x >= 79.981)
             {
-                posi.position = new Vector3(8f, posi.position.y, posi.position.z);
+                posi.position = new Vector3(79.981f, posi.position.y, posi.position.z);
             }
        
                 
         
         
-        if (posi.position.y <= -4 )
+        /*if (posi.position.y <= -4 )
         {
             posi.position = new Vector3(posi.position.x, -4f, posi.position.z);
         }
         else if(posi.position.y >= 4) 
-        { posi.position = new Vector3(posi.position.x, 4f, posi.position.z); }
+        { posi.position = new Vector3(posi.position.x, 4f, posi.position.z); }*/
 
 
         {
@@ -66,12 +68,10 @@ public class naveBehaviour : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject)
-        {
-            
-            Destroy(collision.gameObject);
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "asteroid")
+        {            
+            Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
     }

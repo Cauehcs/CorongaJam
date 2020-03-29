@@ -11,6 +11,8 @@ TagManager:
   - quicktimeBanheiro
   - apple
   - pc
+  - laser
+  - asteroid
   layers:
   - Default
   - TransparentFX

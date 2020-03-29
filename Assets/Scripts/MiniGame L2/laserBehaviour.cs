@@ -14,8 +14,11 @@ public class laserBehaviour : MonoBehaviour
     
     void Update()
     {
+        if(EscolherGame.inInvaders == true){
         transform.Translate(Vector2.up * speed * Time.deltaTime);
-        if(transform.position.y > 6) { Destroy(this.gameObject); }
+        if(transform.position.y > 6) { Destroy(this.gameObject);
+         }
+         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
