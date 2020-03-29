@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class barsBerraviour : MonoBehaviour {
     [SerializeField] Sprite[] numbers, icons;
@@ -35,6 +36,10 @@ public class barsBerraviour : MonoBehaviour {
 
         valorSaudeText = valorSaude.ToString();
         valorTedioText = valorTedio.ToString();
+
+        if(valorSaude == 0) {
+            SceneManager.LoadScene("Perdeu");  
+        }
     }
 
     void Tarefa() {
