@@ -12,21 +12,40 @@ public class barsBerraviour : MonoBehaviour {
     static float valorTedio, valorSaude;
     public string valorTedioText, valorSaudeText;
 
+    public Animator animTarefa;
     [SerializeField] float decrescimoSegundosBarra;
 
     private void Start() {
+        animTarefa.enabled = false;
         valorSaude = 101; valorTedio = 100;
         StartCoroutine(ContagemBarra(decrescimoSegundosBarra));
+        StartCoroutine(timeA());
+    }
+
+    IEnumerator timeA() {
+        yield return new WaitForSeconds(3);
+        animTarefa.enabled = true;
     }
 
     private void Update() {
-        SetUI();
+        SetUI(); Tarefa();
         SetColorUI();
         valorSaude = Mathf.Clamp(valorSaude, 0, 100);
         valorTedio = Mathf.Clamp(valorTedio, 0, 100);
 
         valorSaudeText = valorSaude.ToString();
         valorTedioText = valorTedio.ToString();
+    }
+
+    void Tarefa() {
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            animTarefa.SetBool("pressionando", true);
+        }
+        
+        if (Input.GetKeyUp(KeyCode.Z)) {
+            animTarefa.SetBool("pressionando", false);
+        }
+        
     }
 
     void SetColorUI() {
@@ -62,6 +81,8 @@ public class barsBerraviour : MonoBehaviour {
             numbersPosition[3].color = Color.green; numbersPosition[4].color = Color.green; numbersPosition[5].color = Color.green;
         }
     }
+
+
 
     void SetUI() {
         if (int.Parse(valorSaudeText) >= 100) {

@@ -16,6 +16,7 @@ public class virusBeha : MonoBehaviour
         transform.Translate(Vector2.down * speed * Time.deltaTime);
         if (transform.position.y <= -8.59f)
         {
+            print("a");
             GameController.lifeNave--;
             Destroy(this.gameObject);
         }

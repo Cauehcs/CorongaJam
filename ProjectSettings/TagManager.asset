@@ -13,6 +13,9 @@ TagManager:
   - pc
   - laser
   - asteroid
+  - pia
+  - pratos
+  - banho
   layers:
   - Default
   - TransparentFX

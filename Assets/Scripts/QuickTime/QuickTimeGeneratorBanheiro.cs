@@ -8,6 +8,8 @@ public class QuickTimeGeneratorBanheiro : MonoBehaviour
     [SerializeField] string[] teclasQuickTime;
     [SerializeField] string teclaSelecionada, ultimaTecla;
 
+    public GameObject[] listras;
+
     [SerializeField] Image[] btns;
     public GameObject btnCanva;
 
@@ -42,6 +44,10 @@ public class QuickTimeGeneratorBanheiro : MonoBehaviour
         btns[0].color = new Vector4(btns[0].color.r, btns[0].color.g, btns[0].color.b, 0.35f);
         GameObject.Find("player").GetComponent<playerBehaviour>().enabled = true;
         GameObject.Find("player").GetComponent<Animator>().enabled = true;
+
+        listras[0].SetActive(true);
+        listras[1].SetActive(true);
+
         btnCanva.SetActive(false);
         if (aux == 0) {
             barsBerraviour.PerderBarra(1, 50);

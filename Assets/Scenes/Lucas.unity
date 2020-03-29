@@ -274,8 +274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9b4f17af5b0b743944a254d6a76d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  score: 0
   navesLife:
   - {fileID: 1287711922}
   - {fileID: 1335694418}
@@ -396,7 +394,7 @@ Transform:
   m_GameObject: {fileID: 913590268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.7622585, y: 6.5903473, z: 1}
+  m_LocalScale: {x: 7.9456534, y: 6.5903473, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

@@ -11,6 +11,8 @@ public class QuickTimeGeneratorCozinha : MonoBehaviour
 
     [SerializeField] Image[] btns;
 
+    public GameObject[] listras;
+
     public float pontosMaximo;
     public GameObject[] canvas;
     public static GameObject[] canvasa = new GameObject[4];
@@ -53,6 +55,10 @@ public class QuickTimeGeneratorCozinha : MonoBehaviour
         btns[5].color = new Vector4(btns[5].color.r, btns[5].color.g, btns[5].color.b, 0.35f);
         btns[0].color = new Vector4(btns[0].color.r, btns[0].color.g, btns[0].color.b, 0.35f);
         canvas[3].GetComponent<Animator>().SetBool("sucesso", true);
+
+        listras[0].SetActive(true);
+        listras[1].SetActive(true);
+
         StartCoroutine(tempoPausa());
         if (aux == 0) {
             barsBerraviour.PerderBarra(1, 50);

@@ -25,6 +25,9 @@ public class initialScene : MonoBehaviour
             logo.SetActive(false);
             
         }
+
+        PlayerPrefs.SetFloat("dia", 1f);
+        PlayerPrefs.Save();
     }
     public void loadMain () {
 

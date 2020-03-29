@@ -10,11 +10,11 @@ public class snakeMovement : MonoBehaviour
     Vector2 dir = Vector2.right;
     bool ate = false;
     List<Transform> tail = new List<Transform>();
-    
-   
+
+    public Sprite[] imgs;
     public GameObject tailPrefab;
     void Start () {
-       
+        GetComponent<SpriteRenderer>().sprite = imgs[1];
         InvokeRepeating("move", 0.3f, 0.3f);    
     }
    
@@ -24,16 +24,24 @@ public class snakeMovement : MonoBehaviour
         if(EscolherGame.inSnake == true){
 
             if (Input.GetKeyDown(KeyCode.RightArrow)&& dir != -Vector2.right)
-            {   dir = Vector2.right;}
+            {   dir = Vector2.right;
+                GetComponent<SpriteRenderer>().sprite = imgs[1];
+            }
         
             if (Input.GetKeyDown(KeyCode.DownArrow) && dir != Vector2.up)
-            {dir = -Vector2.up;}
+            {dir = -Vector2.up;
+            GetComponent<SpriteRenderer>().sprite = imgs[2];
+            }
 
             if (Input.GetKeyDown(KeyCode.LeftArrow)&& dir != Vector2.right)
-            {dir = -Vector2.right;} 
+            {dir = -Vector2.right;
+                GetComponent<SpriteRenderer>().sprite = imgs[3];
+            } 
 
             if (Input.GetKeyDown(KeyCode.UpArrow)&& dir != -Vector2.up)
-            {dir = Vector2.up;}
+            {dir = Vector2.up;
+                GetComponent<SpriteRenderer>().sprite = imgs[0];
+            }
         }
     }
 

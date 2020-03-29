@@ -12,7 +12,7 @@ public class pauseController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             if(Paused)
             {
@@ -42,6 +42,7 @@ public class pauseController : MonoBehaviour
 
     public void exit()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
         pauseMenuUi.SetActive(false);
     }
