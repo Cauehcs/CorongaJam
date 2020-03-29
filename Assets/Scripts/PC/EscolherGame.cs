@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class EscolherGame : MonoBehaviour
 {
+    public GameObject[] cameras;
+
+    public static bool savePlayer;
     public Canvas telaEscolha;
     public Text[] txtNameGame;
     public float index;
@@ -30,6 +33,24 @@ public class EscolherGame : MonoBehaviour
             GameObject.Find("player").GetComponent<playerBehaviour>().enabled = true;
         }
         Index();
+        if(Input.GetKeyDown(KeyCode.Return)) SetGame(index);
+    }
+
+    void SetGame(float game) {
+        savePlayer = true;
+        
+        cameras[0].SetActive(false);
+        cameras[1].SetActive(false);
+
+        if (game == 0) {
+            this.enabled = false;
+            SceneManager.LoadScene("snakePedro");
+        }
+
+        if (game == 1) {
+            this.enabled = false;
+            GameController.StartGameNave();
+        }
     }
 
     void Index() {

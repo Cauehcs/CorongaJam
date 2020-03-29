@@ -1309,7 +1309,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 977421917
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &372296254
 RectTransform:
@@ -5664,6 +5664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76508a833ebfc7439e6f15bd12c6cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 110080589}
+  - {fileID: 1111407252}
   telaEscolha: {fileID: 372296253}
   txtNameGame:
   - {fileID: 233357453}
@@ -6586,7 +6589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1742477325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7617,8 +7620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -237}
-  m_SizeDelta: {x: 377.4, y: 94.4}
+  m_AnchoredPosition: {x: 2, y: -219}
+  m_SizeDelta: {x: 605.5, y: 141.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853967059
 MonoBehaviour:
@@ -7651,7 +7654,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Esc para sair
+  m_Text: "Esc para sair \nENTER PARA SELECIONAR"
 --- !u!222 &1853967060
 CanvasRenderer:
   m_ObjectHideFlags: 0

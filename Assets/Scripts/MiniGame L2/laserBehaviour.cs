@@ -23,6 +23,7 @@ public class laserBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        GameController.score++;
         Destroy(collision.gameObject);
         Destroy(this.gameObject);
     }
