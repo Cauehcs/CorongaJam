@@ -27,5 +27,6 @@ public class virusBeha : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
+
     }
 }

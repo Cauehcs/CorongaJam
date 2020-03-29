@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-<<<<<<< HEAD
 using UnityEngine.SceneManagement;
-=======
-using UnityEngine.UI;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
->>>>>>> 36df497553540fba26c253559ea95dbb5bac6713
+
 
 public class DialogOpening : MonoBehaviour
 {
@@ -71,7 +66,7 @@ public class DialogOpening : MonoBehaviour
         controller++;
         if(controller >= 9)
         {
-            SceneManager.LoadScene("Cauê");
+            SceneManager.LoadScene("Tutorial");
         }
     }
 }

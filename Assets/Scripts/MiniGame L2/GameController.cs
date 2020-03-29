@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour
         
         if(time >= 30) {
             barsBerraviour.GanharBarra(1, 30);
-            QuitGame(); 
+            //QuitGame(); 
         }
         
     }

@@ -15,12 +15,6 @@ public class playerBehaviour : MonoBehaviour
     private void FixedUpdate() {
         Movimentacao(speed);
         Animation();
-
-        if (EscolherGame.savePlayer) {
-            PlayerPrefs.SetFloat("position.x", this.transform.position.x);
-            PlayerPrefs.SetFloat("position.y", this.transform.position.y);
-            PlayerPrefs.Save();
-        }
     }
 
     public static bool cima, baixo, esquerda, direita;

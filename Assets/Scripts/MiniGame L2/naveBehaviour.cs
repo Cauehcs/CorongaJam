@@ -29,33 +29,19 @@ public class naveBehaviour : MonoBehaviour
     void Movimento()
     {
         Transform posi = GetComponent<Transform>();
-<<<<<<< HEAD
         //hDirection = Input.GetAxis("Horizontal");
         //transform.Translate(Vector3.right * speed * hDirection);
-        vDirection = Input.GetAxis("Horizontal");
+        vDirection = Input.GetAxisRaw("Horizontal");
         transform.Translate(Vector3.down * speed * vDirection);
 
-        if (posi.position.x <= 67.808)
+        if (posi.position.x <= 82.71414f)
             {
-                posi.position = new Vector3(67.808f, posi.position.y, posi.position.z);
+                posi.position = new Vector3(82.71414f, posi.position.y, posi.position.z);
             }
-            else if (posi.position.x >= 79.981)
+            else if (posi.position.x >= 99.11f)
             {
-                posi.position = new Vector3(79.981f, posi.position.y, posi.position.z);
-=======
-        hDirection = Input.GetAxisRaw("Horizontal");
-        transform.Translate(Vector3.down* speed * hDirection);
-        //vDirection = Input.GetAxis("Vertical");
-        //transform.Translate(Vector3.up * speed * vDirection);
+                posi.position = new Vector3(99.11f, posi.position.y, posi.position.z);
 
-        if (posi.position.x >= 8f)
-            {
-                posi.position = new Vector3(8f, posi.position.y, posi.position.z);
-            }
-            else if (posi.position.x <= -8f)
-            {
-                posi.position = new Vector3(-8f, posi.position.y, posi.position.z);
->>>>>>> 36df497553540fba26c253559ea95dbb5bac6713
             }
        
                 

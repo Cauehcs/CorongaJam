@@ -28,7 +28,7 @@ public class initialScene : MonoBehaviour
     }
     public void loadMain () {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        SceneManager.LoadScene("OpeningCutScene");
     }
 
    
